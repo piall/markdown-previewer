@@ -7,7 +7,7 @@ function App() {
   return (
     <div id="App">
       <div className="row gx-0">
-        <Editor className="col-md-6" />
+        <Editor className="col-md-6" id="editor-wrapper" />
         <Previewer className="col-md-6" id="previewer-wrapper" />
       </div>
     </div>

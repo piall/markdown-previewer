@@ -1,15 +1,33 @@
 #editor-wrapper {
   background-color: white;
   height: calc(100vh - 20px);
+  padding: 20px;
 }
 
 #editor {
   width: 100%;
   height: 100%;
-  border: 1px solid yellowgreen;
+  border: 2px solid #7db9b6;
   resize: none;
+  border-radius: 20px;
 
   &:focus {
     outline: 0;
+  }
+}
+
+@media (max-width: 778px) {
+  #editor-wrapper {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  #editor-wrapper {
+    padding: 3px;
+  }
+
+  #editor {
+    border-radius: 15px;
   }
 }
