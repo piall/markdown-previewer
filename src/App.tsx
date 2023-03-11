@@ -1,14 +1,26 @@
+import { useState } from 'react';
 import { Editor } from './components';
-
-import './App.scss';
 import { Previewer } from './components/previewer';
 
+import './App.scss';
+
 function App() {
+  const [markdownSyntax, setMarkdownSyntax] = useState('');
+
   return (
     <div id="App">
       <div className="row gx-0">
-        <Editor className="col-md-6" id="editor-wrapper" />
-        <Previewer className="col-md-6" id="previewer-wrapper" />
+        <Editor
+          className="col-md-6"
+          id="editor-wrapper"
+          setMarkdownSyntax={setMarkdownSyntax}
+          markdownSyntax={markdownSyntax}
+        />
+        <Previewer
+          className="col-md-6"
+          id="previewer-wrapper"
+          markdownSyntax={markdownSyntax}
+        />
       </div>
     </div>
   );
