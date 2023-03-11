@@ -9,6 +9,7 @@
   height: 100%;
   border: 2px solid #f2921d;
   border-radius: 20px;
+  padding: 20px;
   resize: none;
 
   &:focus {
@@ -29,5 +30,6 @@
 
   #previewer {
     border-radius: 15px;
+    padding: 15px;
   }
 }
