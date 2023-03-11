@@ -10,6 +10,7 @@
   border: 2px solid #7db9b6;
   resize: none;
   border-radius: 20px;
+  padding: 20px;
 
   &:focus {
     outline: 0;
@@ -29,5 +30,6 @@
 
   #editor {
     border-radius: 15px;
+    padding: 15px;
   }
 }
