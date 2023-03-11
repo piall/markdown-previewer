@@ -1,5 +1,17 @@
+import { Editor } from './components';
+
+import './App.scss';
+import { Previewer } from './components/previewer';
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div id="App">
+      <div className="row gx-0">
+        <Editor className="col-md-6" id="editor-wrapper" />
+        <Previewer className="col-md-6" id="previewer-wrapper" />
+      </div>
+    </div>
+  );
 }
 
 export default App;
