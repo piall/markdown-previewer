@@ -14,6 +14,7 @@ export function Previewer({
 }: TypePreviewerProps) {
   return (
     <div id={id} className={className}>
+      <span className="label">Previewer</span>
       <div
         id="previewer"
         dangerouslySetInnerHTML={{ __html: marked(markdownSyntax) }}

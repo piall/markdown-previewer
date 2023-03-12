@@ -21,8 +21,11 @@ export function Editor({
 
   return (
     <div id={id} className={className}>
+      <span className="label">Editor</span>
+
       <textarea
         id="editor"
+        placeholder="Write something..."
         value={markdownSyntax}
         onChange={handleValueChange}
       />

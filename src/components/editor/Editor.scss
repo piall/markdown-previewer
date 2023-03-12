@@ -1,7 +1,12 @@
 #editor-wrapper {
   background-color: white;
-  height: calc(100vh - 20px);
+  height: calc(100vh - calc(20px + 38px));
   padding: 20px;
+  position: relative;
+
+  .label {
+    background: #7db9b6;
+  }
 }
 
 #editor {
@@ -11,6 +16,7 @@
   resize: none;
   border-radius: 20px;
   padding: 20px;
+  word-wrap: break-word;
 
   &:focus {
     outline: 0;
@@ -20,16 +26,5 @@
 @media (max-width: 778px) {
   #editor-wrapper {
     padding: 10px;
-  }
-}
-
-@media (max-width: 360px) {
-  #editor-wrapper {
-    padding: 3px;
-  }
-
-  #editor {
-    border-radius: 15px;
-    padding: 15px;
   }
 }
