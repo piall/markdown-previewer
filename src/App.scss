@@ -1,0 +1,41 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#App {
+  padding: 10px;
+
+  #app-title-wrapper {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    height: 38px;
+  }
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 83px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 778px) {
+  #App {
+    #app-title-wrapper {
+      height: auto;
+    }
+  }
+
+  .label {
+    top: 0px;
+    left: 28px;
+  }
+}

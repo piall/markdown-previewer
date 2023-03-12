@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { Editor } from './components';
+import { Previewer } from './components/previewer';
+
+import './App.scss';
 
 function App() {
+  const [markdownSyntax, setMarkdownSyntax] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <div id="app-title-wrapper">
+        <h2>Markdown Previewer</h2>
+      </div>
+      <div className="row gx-0">
+        <Editor
+          className="col-md-6"
+          id="editor-wrapper"
+          setMarkdownSyntax={setMarkdownSyntax}
+          markdownSyntax={markdownSyntax}
+        />
+        <Previewer
+          className="col-md-6"
+          id="previewer-wrapper"
+          markdownSyntax={markdownSyntax}
+        />
+      </div>
     </div>
   );
 }
