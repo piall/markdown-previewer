@@ -2,6 +2,11 @@
   background-color: white;
   height: calc(100vh - calc(20px + 38px));
   padding: 20px;
+  position: relative;
+
+  .label {
+    background: #f2921d;
+  }
 }
 
 #previewer {
@@ -10,26 +15,15 @@
   border: 2px solid #f2921d;
   border-radius: 20px;
   padding: 20px;
-  resize: none;
+  word-wrap: break-word;
 
   &:focus {
     outline: 0;
   }
 }
 
-@media (max-width: 778) {
+@media (max-width: 778px) {
   #previewer-wrapper {
     padding: 10px;
-  }
-}
-
-@media (max-width: 360px) {
-  #previewer-wrapper {
-    padding: 3px;
-  }
-
-  #previewer {
-    border-radius: 15px;
-    padding: 15px;
   }
 }

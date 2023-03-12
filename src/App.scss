@@ -16,3 +16,26 @@ body {
     height: 38px;
   }
 }
+
+.label {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 83px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 778px) {
+  #App {
+    #app-title-wrapper {
+      height: auto;
+    }
+  }
+
+  .label {
+    top: 0px;
+    left: 28px;
+  }
+}
