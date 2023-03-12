@@ -23,6 +23,7 @@ export function Editor({
     <div id={id} className={className}>
       <textarea
         id="editor"
+        placeholder="Write something..."
         value={markdownSyntax}
         onChange={handleValueChange}
       />
