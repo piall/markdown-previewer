@@ -9,6 +9,9 @@ function App() {
 
   return (
     <div id="App">
+      <div id="app-title-wrapper">
+        <h2>Markdown Previewer</h2>
+      </div>
       <div className="row gx-0">
         <Editor
           className="col-md-6"
