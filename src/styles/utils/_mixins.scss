@@ -1,0 +1,28 @@
+@mixin editor-wrapper($background) {
+  background-color: white;
+  height: calc(100vh - calc(20px + 38px));
+  padding: 20px;
+  position: relative;
+
+  .label {
+    background: $background;
+  }
+}
+
+@mixin editor($background) {
+  width: 100%;
+  height: 100%;
+  border: 2px solid $background;
+  resize: none;
+  border-radius: 20px;
+  padding: 20px;
+  word-wrap: break-word;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin editor-wrapper-up-to-778px {
+  padding: 10px;
+}
