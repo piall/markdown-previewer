@@ -1,7 +1,9 @@
+@import '../utils/variables';
+
 @mixin editor-wrapper($background) {
   background-color: white;
-  height: calc(100vh - calc(20px + 38px));
-  padding: 20px;
+  height: calc(100vh - calc($editor-wrapper-padding + $app-title-height));
+  padding: $editor-wrapper-padding;
   position: relative;
 
   .label {

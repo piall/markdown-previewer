@@ -1,4 +1,5 @@
-@import 'styles/global.scss';
+@import 'styles/global';
+@import 'styles/utils/variables';
 
 #App {
   padding: 10px;
@@ -6,7 +7,7 @@
   #app-title-wrapper {
     font-family: 'Berkshire Swash', cursive;
     text-align: center;
-    height: 38px;
+    height: $app-title-height;
   }
 }
 
