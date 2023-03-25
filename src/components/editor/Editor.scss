@@ -1,30 +1,15 @@
-#editor-wrapper {
-  background-color: white;
-  height: calc(100vh - calc(20px + 38px));
-  padding: 20px;
-  position: relative;
+@import '../../styles/utils/mixins';
 
-  .label {
-    background: #7db9b6;
-  }
+#editor-wrapper {
+  @include editor-wrapper(#7db9b6);
 }
 
 #editor {
-  width: 100%;
-  height: 100%;
-  border: 2px solid #7db9b6;
-  resize: none;
-  border-radius: 20px;
-  padding: 20px;
-  word-wrap: break-word;
-
-  &:focus {
-    outline: 0;
-  }
+  @include editor(#7db9b6);
 }
 
 @media (max-width: 778px) {
   #editor-wrapper {
-    padding: 10px;
+    @include editor-wrapper-up-to-778px;
   }
 }
